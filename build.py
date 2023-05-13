@@ -107,7 +107,4 @@ def export(FILES=None, REQUIREMENTS=None, EXTRA=None, ICON=None, NAME=None, VERS
     for package in REQUIREMENTS:
         os.system(f'pip install --target={RES+"/Python/lib/python3.10/site-packages"} {package}')
 
-export(REQUIREMENTS=["pygame-ce"])
-
-#PyMacBuilder.app/Contents/Resources/Python/lib/python3.10/site-packages
-#PyMacBuilder.app/Contents/Resources/Python/lib/python3.10/site-packages
+export()
